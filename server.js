@@ -56,7 +56,10 @@ async function scrapeRubinot() {
         });
 
         const page = await browser.newPage();
-        await page.goto('https://rubinot.com.br/', { waitUntil: 'networkidle2' });
+        await page.goto('https://rubinot.com.br/', {
+    waitUntil: 'networkidle2',
+    timeout: 60000 
+});
 
         const boostedInfo = await page.evaluate(() => {
             const creatureEl = document.querySelector('#Monster');
