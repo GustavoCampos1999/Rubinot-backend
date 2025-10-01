@@ -1,0 +1,11 @@
+# Ignorar a pasta de dependências
+node_modules/
+
+# Ignorar o cache local do navegador
+.cache/
+
+# Ignorar o arquivo de configuração gerado localmente
+puppeteer-config.json
+
+# Ignorar logs do npm
+npm-debug.log*
